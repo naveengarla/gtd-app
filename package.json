@@ -1,0 +1,41 @@
+{
+  "name": "gtd-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @apps/web dev",
+    "build": "pnpm --filter @apps/web build",
+    "test": "vitest",
+    "e2e": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "seed": "tsx packages/storage/src/seed.ts"
+  },
+  "workspaces": ["packages/*", "apps/*", "e2e"],
+  "dependencies": {
+    "dexie": "^4.0.0",
+    "zustand": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "fake-indexeddb": "^6.0.0",
+    "playwright": "^1.41.0"
+  },
+  "pnpm": {
+    "packageManager": "pnpm@8"
+  }
+}
