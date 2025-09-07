@@ -1,0 +1,9 @@
+{
+  "name": "GTD App",
+  "short_name": "GTD",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Offline GTD app",
+  "icons": []
+}
