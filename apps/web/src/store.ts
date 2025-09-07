@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from 'zustand';
 import { Task } from '@core/types';
 import { parseQuickAdd, selectToday as todaySelector, selectWeek as weekSelector } from '@core';
 import { taskRepo } from '@storage/repositories';
